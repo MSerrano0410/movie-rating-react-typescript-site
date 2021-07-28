@@ -1,2 +1,2 @@
-# movie-rating-react-typescript-site
-Sample React/TypeScript website showcasing some custom React components and TypeScript functionality.
+- must run npm install after git cloning the repository
+- after npm install, do npm start afterwards in the root directory
