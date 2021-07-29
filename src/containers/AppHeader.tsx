@@ -1,5 +1,6 @@
 import React from "react";
 import NavLink from "../classes/NavLink";
+import "./AppHeader.css";
 
 /**
  * Creates a generic header for a page
@@ -22,18 +23,22 @@ export default class AppHeader extends React.Component {
 
     render() {
         let sectionLinks = this.headerLinks.map((link) => {
-           return link.getJSXElement();
+           return link.getJSXElementAsTableCell();
         });
 
         return (
           <header className="app-header">
               <section className="app-title">
-                  <h1>{this.headerTitle}</h1>
+                  <div className="app-title-text">{this.headerTitle}</div>
                   <small>{this.headerDescription}</small>
               </section>
               <span className="fill-space"/>
               <section className="app-links">
-                  {sectionLinks}
+                  <table className="link-table">
+                      <tr>
+                        {sectionLinks}
+                      </tr>
+                  </table>
               </section>
           </header>
         );

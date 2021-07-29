@@ -29,6 +29,14 @@ export default class NavLink {
         );
     }
 
+    getJSXElementAsTableCell() {
+        return (
+          <td>
+              <a href={this.route} target={this.target}>{this.label}</a>
+          </td>
+        );
+    }
+
     setLabel(label: string) {
         this.label = label;
     }
