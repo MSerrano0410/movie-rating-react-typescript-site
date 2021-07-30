@@ -17,6 +17,11 @@
     font-weight:bold;
 }
 
+.app-header {
+    position: sticky;
+    top: 0px;
+}
+
 .app-links {
     padding-top:10px;
 }

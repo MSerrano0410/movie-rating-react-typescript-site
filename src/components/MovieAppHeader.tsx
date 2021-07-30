@@ -5,7 +5,10 @@ export default class MovieAppHeader extends AppHeader {
     constructor() {
         const headerNavLinks = [
             new NavLink("Home", "/home", false),
-            new NavLink("Movie Rating Table", "/movie-ratings", false)
+            new NavLink("Movie Rating Table", "/movie-ratings", false),
+            new NavLink("About Me", "/about", false),
+            new NavLink("Contact Me", "/contact", false),
+            new NavLink("My GitHub", "https://github.com/MSerrano0410", true)
         ];
 
         const headerProps = {
