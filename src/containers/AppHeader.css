@@ -32,6 +32,6 @@
     background-color: #BDBDD1;
 }
 
-.link-table tr td + td {
+.link-table tbody tr td + td {
     border-left:2px solid black;
 }

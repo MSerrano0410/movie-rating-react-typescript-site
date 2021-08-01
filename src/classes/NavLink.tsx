@@ -31,7 +31,7 @@ export default class NavLink {
 
     getJSXElementAsTableCell() {
         return (
-          <td>
+          <td key={this.route}>
               <a href={this.route} target={this.target}>{this.label}</a>
           </td>
         );

@@ -35,9 +35,11 @@ export default class AppHeader extends React.Component {
               <span className="fill-space"/>
               <section className="app-links">
                   <table className="link-table">
+                      <tbody>
                       <tr>
                         {sectionLinks}
                       </tr>
+                      </tbody>
                   </table>
               </section>
           </header>
